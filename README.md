@@ -259,18 +259,6 @@ def calculate_guarantee_fee(expected_loss, sba_guaranteed_amount, margin=0.20):
     ...
 ```
 
-### Adding New Features
-
-1. Add feature engineering in `src/preprocessing/feature_engineering.py`
-2. Update feature lists in `get_feature_lists()`
-3. Retrain models with `python train_model.py`
-
-### Trying Different Models
-
-Modify model parameters in training functions:
-- `src/models/pd_model.py` - PD model configurations
-- `src/models/lgd_model.py` - LGD model configurations
-
 ## 📚 Background: SBA Loan Guarantee Program
 
 The Small Business Administration (SBA) provides loan guarantees to reduce risk for lenders:
@@ -290,36 +278,3 @@ The Small Business Administration (SBA) provides loan guarantees to reduce risk 
 - **Fee Setting**: Guarantee fees should cover expected losses + margin
 - **Program Sustainability**: Proper pricing ensures long-term viability
 - **Portfolio Analysis**: Identify high-risk segments
-
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-
-- [ ] Add feature importance analysis
-- [ ] Implement SHAP values for interpretability
-- [ ] Create API endpoint for predictions
-- [ ] Add unit tests
-- [ ] Create visualization dashboard
-- [ ] Implement time-series cross-validation
-- [ ] Add economic scenario analysis
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📧 Contact
-
-For questions or collaboration:
-- **Project Lead**: [Your Name]
-- **Email**: [your.email@example.com]
-- **LinkedIn**: [Your LinkedIn Profile]
-
-## 🙏 Acknowledgments
-
-- SBA for historical loan data
-- Credit risk modeling best practices from Basel III framework
-- Open source machine learning community
-
----
-
-**Note**: This model is for educational and analytical purposes. Actual SBA guarantee fees involve additional factors including regulatory requirements, program policies, and economic conditions.
